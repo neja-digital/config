@@ -1,0 +1,39 @@
+{
+  "name": "@neja-digital/config",
+  "version": "0.1.0",
+  "description": "Shared ESLint and TypeScript configuration for neja-digital projects",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/neja-digital/config.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "exports": {
+    "./eslint": "./eslint/index.js",
+    "./tsconfig/base.json": "./tsconfig/base.json",
+    "./tsconfig/app.json": "./tsconfig/app.json",
+    "./tsconfig/node.json": "./tsconfig/node.json"
+  },
+  "files": [
+    "eslint",
+    "tsconfig"
+  ],
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "typescript-eslint": "^8.59.2"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0",
+    "typescript": ">=5.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.3.0",
+    "typescript": "~6.0.2"
+  }
+}
